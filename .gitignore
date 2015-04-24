@@ -1,0 +1,9 @@
+.gradle
+/local.properties
+/gradle.properties
+/.idea/workspace.xml
+.DS_Store
+.idea
+*.iml
+build/
+server/src/github.com/

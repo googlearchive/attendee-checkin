@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2015 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackground"
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+    <View
+        android:id="@+id/line_above"
+        android:layout_width="@dimen/timeline_width"
+        android:layout_height="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="@id/icon"
+        android:layout_marginLeft="@dimen/timeline_margin"
+        android:layout_marginRight="@dimen/timeline_margin"
+        android:background="@color/line_default"/>
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/line_above"
+        android:contentDescription="@string/content_description_icon"
+        tools:src="@drawable/ic_person"/>
+
+    <ImageView
+        android:id="@+id/checkin"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignLeft="@id/icon"
+        android:layout_alignStart="@id/icon"
+        android:layout_alignTop="@id/icon"
+        android:contentDescription="@string/content_description_checkin"
+        tools:src="@drawable/checkin"/>
+
+    <View
+        android:id="@+id/line_below"
+        android:layout_width="@dimen/timeline_width"
+        android:layout_height="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/icon"
+        android:layout_marginLeft="@dimen/timeline_margin"
+        android:layout_marginRight="@dimen/timeline_margin"
+        android:background="@color/line_default"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/icon"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@id/icon"
+        android:layout_toRightOf="@id/icon"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="?android:attr/textColorPrimary"
+        tools:text="John Doe"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/icon"
+        android:layout_toRightOf="@id/icon"
+        android:backgroundTint="@color/secondary_text_default_material_light"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="?android:attr/textColorSecondary"
+        tools:text="8 mins ago"/>
+
+</RelativeLayout>

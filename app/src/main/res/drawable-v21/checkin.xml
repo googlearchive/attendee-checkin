@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2015 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="48dp"
+        android:height="48dp"
+        android:viewportWidth="56"
+        android:viewportHeight="56">
+    <path
+        android:name="outer_stroke"
+        android:pathData="M47.4221746,46.755776 C57.7807037,36.0292052 57.4823468,18.9363544 46.755776,8.57782539 C36.0292052,-1.78070367 18.9363544,-1.48234685 8.57782539,9.244224 C-1.78070367,19.9707948 -1.48234685,37.0636456 9.244224,47.4221746 C19.9707948,57.7807037 37.0636456,57.4823468 47.4221746,46.755776 L47.4221746,46.755776 Z"
+        android:strokeColor="#8BC34A"
+        android:strokeWidth="3"
+        android:trimPathEnd="1"/>
+
+    <group
+        android:name="checkin_circle"
+        android:pivotX="46"
+        android:pivotY="46"
+        android:scaleX="1"
+        android:scaleY="1">
+        <path
+            android:name="circle"
+            android:pathData="M56,46 C56,40.4771525 51.5228475,36 46,36 C40.4771525,36 36,40.4771525 36,46 C36,51.5228475 40.4771525,56 46,56 C51.5228475,56 56,51.5228475 56,46 Z"
+            android:fillColor="#8BC34A"/>
+        <path
+            android:name="tick"
+            android:pathData="M50.9765625,42.1183894 L44.0769231,49.0612981 L41.1257512,45.9113582"
+            android:strokeColor="#ffffff"
+            android:strokeWidth="2"
+            android:trimPathStart="0"/>
+    </group>
+</vector>

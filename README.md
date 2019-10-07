@@ -1,5 +1,5 @@
-Gutenberg
-=========
+Attendee Check-In
+=================
 
 This sample has been deprecated/archived meaning it's read-only and it's no longer actively maintained (more details on archiving can be found [here][1]).
 
